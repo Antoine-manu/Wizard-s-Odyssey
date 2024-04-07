@@ -1,0 +1,7 @@
+Différents batons
+- Differents spells selon les batons 
+Ressource a miner pour craft 
+Nouveau biomes avec les ressources
+Nouveau mob
+Boss dans le biome avec sa structure
+Villageois custom

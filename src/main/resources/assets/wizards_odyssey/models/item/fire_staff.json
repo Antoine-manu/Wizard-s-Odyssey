@@ -1,0 +1,16 @@
+{
+  "parent" : "minecraft:item/handled",
+  "loader" : "forge:separate_transforms",
+  "base" : {
+    "parent" : "wizards_odyssey:item/fire_staff_3d"
+  },
+  "perspectives" : {
+    "gui" : {
+      "parent" : "wizards_odyssey:item/fire_staff_2d"
+    },
+    "fixed" : {
+      "parent" : "wizards_odyssey:item/fire_staff_2d"
+    }
+
+  }
+}

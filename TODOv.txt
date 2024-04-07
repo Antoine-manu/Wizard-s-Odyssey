@@ -1,0 +1,9 @@
+Différents batons
+- Differents spells selon les batons 
+Ressource a miner pour craft 
+Nouveau biomes avec les ressources -> Illusion Lands
+Nouveau mob
+	- Mob qui peut se duppliquer (image phantome) 
+	- Mob volant
+Boss dans le biome avec sa structure
+Villageois custom

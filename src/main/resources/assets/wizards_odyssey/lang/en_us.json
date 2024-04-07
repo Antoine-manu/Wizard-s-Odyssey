@@ -1,0 +1,14 @@
+{
+  "creativetab.wizards_odyssey" : "Wizard's Odyssey",
+
+  "item.wizards_odyssey.fire_staff" : "Fire Staff",
+
+  "block.wizards_odyssey.illusion_grass_block" : "Illusion Grass Block",
+  "block.wizards_odyssey.illusion_dirt" : "Illusion Dirt",
+  "block.wizards_odyssey.illusion_log" : "Illusion Log",
+  "block.wizards_odyssey.stripped_illusion_log" : "Stripped Illusion Log",
+  "block.wizards_odyssey.stripped_illusion_wood" : "Stripped Illusion Wood",
+  "block.wizards_odyssey.illusion_planks" : "Illusion Planks",
+  "block.wizards_odyssey.illusion_leaves" : "Illusion Leaves",
+  "block.wizards_odyssey.illusion_wood" : "Illusion Wood"
+}
