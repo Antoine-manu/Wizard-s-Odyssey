@@ -1,6 +1,0 @@
-{
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0" : "wizards_odyssey:item/fire_staff_2d"
-  }
-}

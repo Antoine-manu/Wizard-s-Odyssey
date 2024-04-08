@@ -1,9 +1,11 @@
 package net.jepeta.wizards_odyssey.datagen;
 
 import net.jepeta.wizards_odyssey.Wizards_Odyssey;
+import net.jepeta.wizards_odyssey.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -17,6 +19,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ILLUSION_LOG.get().asItem())
+                .add(ModBlocks.ILLUSION_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ILLUSION_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ILLUSION_WOOD.get().asItem());
 
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.ILLUSION_PLANKS.get().asItem());
     }
 }

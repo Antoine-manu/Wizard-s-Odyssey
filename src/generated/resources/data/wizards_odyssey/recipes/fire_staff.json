@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "B  ",
+    " S ",
+    "  S"
+  ],
+  "result": {
+    "item": "wizards_odyssey:fire_staff"
+  },
+  "show_notification": true
+}
