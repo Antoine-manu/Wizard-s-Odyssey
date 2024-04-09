@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wizards_odyssey:block/stripped_illusion_log",
+    "side": "wizards_odyssey:block/stripped_illusion_log"
+  }
+}

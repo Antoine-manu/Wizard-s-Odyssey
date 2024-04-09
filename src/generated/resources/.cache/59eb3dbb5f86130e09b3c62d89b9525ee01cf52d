@@ -1,0 +1,9 @@
+// 1.20.1	2024-04-09T19:44:15.03625	Loot Tables
+b3e86a0c125a121c25d743a7b589cbf36df22605 data/wizards_odyssey/loot_tables/blocks/illusion_dirt.json
+a96a941803b07e9d9cb53552888a773077602867 data/wizards_odyssey/loot_tables/blocks/illusion_grass_block.json
+a80151d4ac7c27dbd079b4b93990542947b9ce99 data/wizards_odyssey/loot_tables/blocks/illusion_leaves.json
+0795f828c1d0d3121f5206ee90600f05847f06cb data/wizards_odyssey/loot_tables/blocks/illusion_log.json
+bfab791ffc394d0e8aa74314dff4e72cad2294e0 data/wizards_odyssey/loot_tables/blocks/illusion_planks.json
+c95d0cc63e9090e67cbd1af811a5c4b3653ae385 data/wizards_odyssey/loot_tables/blocks/illusion_wood.json
+47624083bcd2f1255839816c488cea411de2e5db data/wizards_odyssey/loot_tables/blocks/stripped_illusion_log.json
+775f423eaa0527debfcbcd633f27551b9eb5c058 data/wizards_odyssey/loot_tables/blocks/stripped_illusion_wood.json

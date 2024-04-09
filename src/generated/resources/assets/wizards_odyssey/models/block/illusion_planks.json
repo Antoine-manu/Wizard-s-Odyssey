@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "wizards_odyssey:block/illusion_planks"
+  }
+}

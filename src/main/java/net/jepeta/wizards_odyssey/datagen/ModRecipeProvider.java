@@ -43,7 +43,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
 //        Exemplte de recette shapeless genre avec un block de X truc tu donnes X items
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ILLUSION_PLANKS.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ILLUSION_PLANKS.get(), 4)
                 .requires(ModBlocks.ILLUSION_LOG.get())
                 .unlockedBy(getHasName(ModBlocks.ILLUSION_LOG.get()), has(ModBlocks.ILLUSION_LOG.get()))
                 .save(consumer);

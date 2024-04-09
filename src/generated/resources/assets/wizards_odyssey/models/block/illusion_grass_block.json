@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "wizards_odyssey:block/illusion_dirt",
+    "east": "wizards_odyssey:block/illusion_grass_side",
+    "north": "wizards_odyssey:block/illusion_grass_side",
+    "south": "wizards_odyssey:block/illusion_grass_side",
+    "up": "wizards_odyssey:block/illusion_grass_top",
+    "west": "wizards_odyssey:block/illusion_grass_side"
+  }
+}

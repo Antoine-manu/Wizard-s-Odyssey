@@ -18,7 +18,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.FIRE_STAFF);
+//        simpleItem(ModItems.FIRE_STAFF);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item){
