@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wizards_odyssey:block/illusion_slab"
+    },
+    "type=double": {
+      "model": "wizards_odyssey:block/illusion_planks"
+    },
+    "type=top": {
+      "model": "wizards_odyssey:block/illusion_slab_top"
+    }
+  }
+}

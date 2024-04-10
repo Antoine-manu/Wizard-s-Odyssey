@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "wizards_odyssey:block/illusion_stone_bricks",
+    "side": "wizards_odyssey:block/illusion_stone_bricks",
+    "top": "wizards_odyssey:block/illusion_stone_bricks"
+  }
+}

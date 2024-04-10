@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> FIRE_STAFF = ITEMS.register("fire_staff",
             () -> new StaffItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> FAERITE = ITEMS.register("faerite",
+            () -> new StaffItem(new Item.Properties()));
+
 
     public  static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

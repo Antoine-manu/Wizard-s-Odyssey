@@ -3,8 +3,10 @@ package net.jepeta.wizards_odyssey.block;
 import net.jepeta.wizards_odyssey.Wizards_Odyssey;
 import net.jepeta.wizards_odyssey.item.ModItems;
 import net.jepeta.wizards_odyssey.item.custom.ModFlammableRotatedPillarBlock;
+import net.jepeta.wizards_odyssey.worldgen.tree.IllusionTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,6 +14,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -58,6 +61,18 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> ILLUSION_STAIRS = registerBlock("illusion_stairs",
+            () -> new StairBlock(ModBlocks.ILLUSION_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(ModBlocks.ILLUSION_PLANKS.get()).strength(3f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ILLUSION_SLAB = registerBlock("illusion_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ILLUSION_FENCE = registerBlock("illusion_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)
+                    .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
     public static final RegistryObject<Block> ILLUSION_LEAVES = registerBlock("illusion_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
@@ -74,11 +89,36 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<Block> FAERITE_ORE = registerBlock("faerite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
+    public static final RegistryObject<Block> DEEPSLATE_FAERITE_ORE = registerBlock("deepslate_faerite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
-//    public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
-//            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
-//                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+    public static final RegistryObject<Block> FAERITE_BLOCK = registerBlock("faerite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
+
+    public static final RegistryObject<Block> ILLUSION_STONE = registerBlock("illusion_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    public static final RegistryObject<Block> ILLUSION_COBBLESTONE = registerBlock("illusion_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
+    public static final RegistryObject<Block> ILLUSION_STONE_BRICKS = registerBlock("illusion_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+    public static final RegistryObject<Block> ILLUSION_STONE_BRICKS_STAIRS = registerBlock("illusion_stone_bricks_stairs",
+            () -> new StairBlock(ModBlocks.ILLUSION_STONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(ModBlocks.ILLUSION_STONE_BRICKS.get()).strength(3f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
+
+    public static final RegistryObject<Block> ILLUSION_STONE_BRICKS_SLAB = registerBlock("illusion_stone_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(ModBlocks.ILLUSION_STONE_BRICKS.get())
+                    .strength(2f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> ILLUSION_SAPLING = registerBlock("illusion_sapling",
+            () -> new SaplingBlock(new IllusionTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 

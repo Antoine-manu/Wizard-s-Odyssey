@@ -1,11 +1,11 @@
-// 1.20.1	2024-04-09T19:44:15.0413835	Tags for minecraft:block mod id wizards_odyssey
+// 1.20.1	2024-04-10T22:24:14.3838489	Tags for minecraft:block mod id wizards_odyssey
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 b8a02d66674a1e2927f518096462352e37da7f9c data/minecraft/tags/blocks/logs_that_burn.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
+dad8f3dcb448a68f19023d05dd6ec64e99123c96 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/pickaxe.json
+345851f76f4c9cb98d75bcb7917abdb6578aa7c9 data/minecraft/tags/blocks/mineable/pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/shovel.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+97e9f23c6cb98c4918aecdb109fceffa44ad2add data/minecraft/tags/blocks/needs_diamond_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_iron_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_stone_tool.json
 5f29f2859de889b93af05be73411e77784a1e84b data/minecraft/tags/blocks/planks.json

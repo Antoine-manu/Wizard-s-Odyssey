@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "illusion",
+  "ingredient": {
+    "item": "wizards_odyssey:illusion_cobblestone"
+  },
+  "result": "wizards_odyssey:illusion_stone"
+}

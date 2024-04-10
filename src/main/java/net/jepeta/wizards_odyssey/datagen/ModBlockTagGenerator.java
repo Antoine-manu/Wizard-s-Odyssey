@@ -28,13 +28,25 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         //Pareil que en haut je .add un block pour lui donner le niveau de minable requis
         this.tag(BlockTags.NEEDS_IRON_TOOL);
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+            .add(ModBlocks.FAERITE_ORE.get())
+            .add(ModBlocks.DEEPSLATE_FAERITE_ORE.get());
         this.tag(BlockTags.NEEDS_STONE_TOOL);
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
         //Pareil que en haut je .add un block pour lui donner le type d'outils (je peux faire .add(item, item, item , ..)
-        this.tag(BlockTags.MINEABLE_WITH_AXE);
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE);
+        this.tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.ILLUSION_SLAB.get())
+                .add(ModBlocks.ILLUSION_STAIRS.get())
+                .add(ModBlocks.ILLUSION_FENCE.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.ILLUSION_STONE_BRICKS.get())
+                .add(ModBlocks.ILLUSION_STONE_BRICKS_SLAB.get())
+                .add(ModBlocks.ILLUSION_STONE_BRICKS_STAIRS.get())
+                .add(ModBlocks.ILLUSION_COBBLESTONE.get())
+                .add(ModBlocks.ILLUSION_STONE.get())
+                .add(ModBlocks.FAERITE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_FAERITE_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_HOE);
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
 

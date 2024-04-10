@@ -2,6 +2,7 @@
   "creativetab.wizards_odyssey" : "Wizard's Odyssey",
 
   "item.wizards_odyssey.fire_staff" : "Fire Staff",
+  "item.wizards_odyssey.faerite" : "Faerite",
 
   "block.wizards_odyssey.illusion_grass_block" : "Illusion Grass Block",
   "block.wizards_odyssey.illusion_dirt" : "Illusion Dirt",
@@ -9,6 +10,18 @@
   "block.wizards_odyssey.stripped_illusion_log" : "Stripped Illusion Log",
   "block.wizards_odyssey.stripped_illusion_wood" : "Stripped Illusion Wood",
   "block.wizards_odyssey.illusion_planks" : "Illusion Planks",
+  "block.wizards_odyssey.illusion_stairs" : "Illusion Stairs",
+  "block.wizards_odyssey.illusion_slab" : "Illusion Slab",
+  "block.wizards_odyssey.illusion_fence" : "Illusion Fence",
   "block.wizards_odyssey.illusion_leaves" : "Illusion Leaves",
-  "block.wizards_odyssey.illusion_wood" : "Illusion Wood"
+  "block.wizards_odyssey.faerite_ore" : "Faerite Ore",
+  "block.wizards_odyssey.deepslate_faerite_ore" : "Deepslate Faerite Ore",
+  "block.wizards_odyssey.faerite_block" : "Faerite Block",
+  "block.wizards_odyssey.illusion_stone" : "Illusion Stone",
+  "block.wizards_odyssey.illusion_cobblestone" : "Illusion CobbleStone",
+  "block.wizards_odyssey.illusion_stone_bricks" : "Illusion Stone Bricks",
+  "block.wizards_odyssey.illusion_stone_bricks_stairs" : "Illusion Stone Bricks Stairs",
+  "block.wizards_odyssey.illusion_stone_bricks_slab" : "Illusion Stone Bricks Slab",
+  "block.wizards_odyssey.illusion_wood" : "Illusion Wood",
+  "block.wizards_odyssey.illusion_sapling" : "Illusion Sapling"
 }

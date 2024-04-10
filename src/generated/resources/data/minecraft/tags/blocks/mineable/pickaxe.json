@@ -1,3 +1,11 @@
 {
-  "values": []
+  "values": [
+    "wizards_odyssey:illusion_stone_bricks",
+    "wizards_odyssey:illusion_stone_bricks_slab",
+    "wizards_odyssey:illusion_stone_bricks_stairs",
+    "wizards_odyssey:illusion_cobblestone",
+    "wizards_odyssey:illusion_stone",
+    "wizards_odyssey:faerite_ore",
+    "wizards_odyssey:deepslate_faerite_ore"
+  ]
 }

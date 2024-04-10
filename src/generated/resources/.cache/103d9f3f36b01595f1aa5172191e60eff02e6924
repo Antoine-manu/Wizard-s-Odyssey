@@ -1,0 +1,5 @@
+// 1.20.1	2024-04-11T00:02:20.456355	Registries
+530ee3b5eb9fbd1429b250b8b7eafa187efb3c60 data/wizards_odyssey/forge/biome_modifier/add_faerite_ore.json
+8840a62a403cce1794459527ea208de90b70b32e data/wizards_odyssey/worldgen/configured_feature/faerite_ore.json
+030a6f5a1f98b75cf72fb0fb0541d1f0f455a303 data/wizards_odyssey/worldgen/configured_feature/illusion.json
+457ee921d0592b4462e84c008e56c9723230ed95 data/wizards_odyssey/worldgen/placed_feature/faerite_ore_placed.json

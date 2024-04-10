@@ -20,8 +20,10 @@ import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     // Ajout de recette a faire cuir RAW par ORE (dans la list.OF je peux mettre item a cuir, item a cuir, ..)
-//    private static final List<ItemLike> SMELTABLES = List.of(ModItems.RAW_ORE.get(),
-//            ModBlocks.ORE.get());
+    private static final List<ItemLike> SMELTABLES_FAERITE = List.of(ModBlocks.FAERITE_ORE.get(),
+            ModBlocks.DEEPSLATE_FAERITE_ORE.get());
+
+    private static final List<ItemLike> SMELTABLES_ILLUSION = List.of(ModBlocks.ILLUSION_COBBLESTONE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -29,9 +31,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
-//Ici tu load le fait que les recettes soient utilisé pour les smelt and blast c.F au dessus
-//        oreBlasting(consumer, SMELTABLES, RecipeCategory.MISC, 0.25f, 100, "sapphire");
-//        oreSmelting(consumer, SMELTABLES, RecipeCategory.MISC, 0.25f, 100, "sapphire");
+        //Ici tu load le fait que les recettes soient utilisé pour les smelt and blast c.F au dessus
+        oreBlasting(consumer, SMELTABLES_FAERITE, RecipeCategory.MISC, ModItems.FAERITE.get(), 0.25f, 100, "faerite");
+        oreSmelting(consumer, SMELTABLES_FAERITE, RecipeCategory.MISC, ModItems.FAERITE.get(), 0.25f, 100, "faerite");
+
+        oreBlasting(consumer, SMELTABLES_ILLUSION, RecipeCategory.MISC, ModBlocks.ILLUSION_STONE.get(), 0.1f, 100, "illusion");
+        oreSmelting(consumer, SMELTABLES_ILLUSION, RecipeCategory.MISC, ModBlocks.ILLUSION_STONE.get(), 0.1f, 100, "illusion");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_STAFF.get())
                 .pattern("B  ")
@@ -42,6 +47,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.BLAZE_POWDER), has(Items.BLAZE_POWDER))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FAERITE_BLOCK.get())
+                .pattern("FFF")
+                .pattern("FFF")
+                .pattern("FFF")
+                .define('F', ModItems.FAERITE.get())
+                .unlockedBy(getHasName(ModItems.FAERITE.get()), has(ModItems.FAERITE.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ILLUSION_STONE_BRICKS.get())
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModBlocks.ILLUSION_STONE.get())
+                .unlockedBy(getHasName(ModBlocks.ILLUSION_STONE.get()), has(ModBlocks.ILLUSION_STONE.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FAERITE.get(), 9)
+                .requires(ModBlocks.FAERITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FAERITE_BLOCK.get()), has(ModBlocks.FAERITE_BLOCK.get()))
+                .save(consumer);
+
 //        Exemplte de recette shapeless genre avec un block de X truc tu donnes X items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ILLUSION_PLANKS.get(), 4)
                 .requires(ModBlocks.ILLUSION_LOG.get())
@@ -49,13 +74,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
     }
 
-    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
-    }
-
-    protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
-        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
-    }
 
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
         Iterator var9 = pIngredients.iterator();
