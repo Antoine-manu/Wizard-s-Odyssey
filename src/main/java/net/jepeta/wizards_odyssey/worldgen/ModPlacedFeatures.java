@@ -1,10 +1,13 @@
 package net.jepeta.wizards_odyssey.worldgen;
 
 import net.jepeta.wizards_odyssey.Wizards_Odyssey;
+import net.jepeta.wizards_odyssey.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
@@ -18,12 +21,18 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> FAERITE_ORE_PLACED_KEY = registerKey("faerite_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> ILLUSION_PLACED_KEY = registerKey("illusion_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, FAERITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FAERITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(6,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0))));
+
+        register(context, ILLUSION_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ILLUSION_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
+                        ModBlocks.ILLUSION_SAPLING.get()));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "wizards_odyssey:illusion_placed",
+  "step": "vegetal_decoration"
+}
